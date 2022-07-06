@@ -3,6 +3,8 @@ import "./styles/main.scss";
 
 //JS Files (JS)
 import { slideshowSwiper } from "./js/slideshow.js";
+import { burgerNav } from "./js/burger-nav";
 
-//Initialize Swiper Slideshow
+//Initialize functions
 slideshowSwiper();
+burgerNav();

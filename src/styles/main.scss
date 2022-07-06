@@ -1,2 +1,14 @@
 @import "config";
+@import "header";
+@import "navigation";
 @import "slideshow";
+
+.main-container {
+  transition: cubic-bezier(0.87, 0, 0.13, 1) 0.3s transform;
+}
+
+body.nav-open {
+  .main-container {
+    transform: translateX(-37.5rem);
+  }
+}

@@ -7,23 +7,29 @@
   padding: 2rem 1.5rem;
   gap: 3rem;
   z-index: 100;
+
   .school-info {
     display: flex;
     gap: clamp(0.5rem, 1.1vw, 1.6rem);
     color: #fff;
+
     .homepage-link {
       transition: ease 0.2s opacity;
+
       img {
         display: block;
         width: clamp(7rem, 6.5vw, 9rem);
         object-fit: cover;
       }
+
       :hover {
         opacity: 0.8;
       }
     }
+
     .heading {
       font-size: clamp(2rem, 2.1vw, 2.9rem);
+
       span {
         display: block;
         font-size: clamp(1.4rem, 1.2vw, 1.6rem);

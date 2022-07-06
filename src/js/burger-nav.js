@@ -18,15 +18,21 @@ export const burgerNav = () => {
     if (isOpen && e.key === "Escape") return toggleNavigation(false);
   };
 
+  const handleDropdown = () => {
+    document.querySelector("[data-nav-sub-list]").classList.toggle("nav-sub-list-open");
+  };
+
   const applyListeners = () => {
     if (isBurger.matches) {
       burgerTrigger.addEventListener("click", toggleNavigation);
       document.addEventListener("keydown", handleEsc);
       document.addEventListener("click", handleOutside);
+      document.querySelector("[data-dropdown-trigger]").addEventListener("click", handleDropdown);
     } else {
       burgerTrigger.removeEventListener("click", toggleNavigation);
       document.removeEventListener("keydown", handleEsc);
       document.removeEventListener("click", handleOutside);
+      document.querySelector("[data-dropdown-trigger]").removeEventListener("click", handleDropdown);
       isOpen && toggleNavigation();
     }
   };

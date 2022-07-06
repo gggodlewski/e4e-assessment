@@ -52,12 +52,7 @@ module.exports = {
     // HTML PAGES
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: path.resolve(__dirname, "src/html/index.html"),
-    }),
-    new HtmlWebpackPlugin({
-      filename: "about.html",
-      template: path.resolve(__dirname, "src/html/about.html"),
-      chunks: ["bundle"],
+      template: path.resolve(__dirname, "src/index.html"),
     }),
   ],
 };

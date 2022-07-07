@@ -1,0 +1,32 @@
+.welcome-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: clamp(1rem, 1.7vw, 2rem);
+  padding: clamp(3rem, 5vw, 6rem) 2rem clamp(3rem, 7.4vw, 9rem);
+  background: url(https://assets.codepen.io/1914743/welcome-watermark.png) center no-repeat;
+  background-size: cover;
+
+  .welcome-intro {
+    color: #959595;
+    font-weight: 600;
+    font-size: clamp(2rem, 2vw, 2.4rem);
+  }
+
+  .welcome-heading {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: clamp(3rem, 3.7vw, 4.5rem);
+  }
+
+  .welcome-text {
+    color: var(--dark-color);
+    max-width: 73ch;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  }
+}

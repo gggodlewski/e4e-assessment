@@ -12,6 +12,7 @@ export const testimonialsSwiper = () => {
     },
     pagination: {
       el: ".testimonials-block .swiper-pagination",
+      clickable: true,
     },
   });
 };

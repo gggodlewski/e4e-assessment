@@ -6,7 +6,7 @@
   justify-content: center;
   background: url(../assets/news-bg.jpg) center no-repeat;
   background-size: cover;
-  padding: clamp(2rem, 5vw, 7rem) clamp(1.5rem, 2.2vw, 3rem) clamp(8rem, 10vw, 14rem);
+  padding: clamp(2rem, 5vw, 7rem) clamp(1.5rem, 2.2vw, 3rem) clamp(8rem, 20vw, 24rem);
   overflow: hidden;
   &:after {
     content: "";

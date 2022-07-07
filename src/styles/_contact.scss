@@ -1,0 +1,87 @@
+.contact-block {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--primary-dark-color);
+  padding: clamp(2rem, 2vw, 7rem);
+  .contact-decorative-svg {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 20rem;
+  }
+  .contact-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: clamp(90rem, 78.6vw, 110rem);
+    width: 100%;
+    justify-content: space-between;
+    gap: 4rem;
+    .school-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      img {
+        display: block;
+        object-fit: cover;
+        width: 8.9rem;
+        margin: 0 auto;
+      }
+      .quote {
+        width: 100%;
+        color: var(--primary-light-color);
+        font-size: clamp(2rem, 2.9vw, 4rem);
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        z-index: 3;
+        span {
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: clamp(1rem, 1.5vw, 2rem);
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        .svg-icon {
+          width: 1.6rem;
+          height: 1.6rem;
+          fill: var(--primary-light-color);
+        }
+        .contact-text {
+          color: #fff;
+          font-size: 1.9rem;
+          font-weight: 600;
+          &.contact-link {
+            color: #fff;
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-block {
+    .contact-inner {
+      flex-direction: row;
+      .school-info {
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

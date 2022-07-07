@@ -89,6 +89,7 @@
     background-size: cover;
     filter: brightness(0.6);
     background-attachment: fixed;
+    will-change: transform;
   }
 }
 

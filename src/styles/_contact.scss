@@ -3,7 +3,7 @@
   display: grid;
   place-items: center;
   background: var(--primary-dark-color);
-  padding: clamp(2rem, 2vw, 7rem);
+  padding: 0 2rem clamp(2rem, 5vw, 7rem);
   .contact-decorative-svg {
     position: absolute;
     bottom: 100%;

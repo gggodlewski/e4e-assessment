@@ -1,0 +1,32 @@
+.quicklinks-block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 2rem;
+  background: #2b354e;
+  gap: clamp(4rem, 5.8vw, 8rem);
+  .quicklink-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #fff;
+    transition: ease 0.2s color;
+    .svg-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: var(--primary-color);
+      transition: ease 0.2s transform;
+    }
+    &:hover {
+      color: var(--secondary-color);
+      .svg-icon {
+        transform: translateX(20%);
+      }
+    }
+  }
+}

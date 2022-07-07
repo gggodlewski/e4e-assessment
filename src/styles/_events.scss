@@ -46,7 +46,8 @@
         display: grid;
         place-items: center;
         background: var(--primary-color);
-        width: 7.7rem;
+        color: #fff;
+        width: 6rem;
         height: 6.8rem;
         z-index: 5;
         cursor: pointer;
@@ -68,8 +69,8 @@
           color: var(--primary-color);
         }
         svg {
-          width: 80%;
-          height: 80%;
+          width: 25%;
+          height: 25%;
           fill: currentColor;
           transition: ease 0.2s fill;
         }

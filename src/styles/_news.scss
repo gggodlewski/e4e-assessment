@@ -41,9 +41,11 @@
     .swiper-slide {
       opacity: 0;
       transition: ease 0.2s opacity;
+      pointer-events: none;
     }
     .swiper-slide-visible {
       opacity: 1;
+      pointer-events: all;
     }
     .swiper-nav-button {
       position: absolute;

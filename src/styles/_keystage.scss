@@ -1,0 +1,114 @@
+.key-stage-block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1.5rem, 1.8vw, 3rem);
+  padding: clamp(2rem, 2vw, 3rem) clamp(2rem, 2vw, 4rem);
+  .ks-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(0.3rem, 0.9vw, 4rem);
+    height: clamp(30rem, 24.9vw, 42rem);
+    width: clamp(30rem, 24.9vw, 42rem);
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.3;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+      opacity: 0;
+      transition: ease 0.4s opacity;
+    }
+    &.ks-item-1 {
+      background: url(https://assets.codepen.io/1914743/1.jpg) center no-repeat;
+      background-size: cover;
+    }
+
+    &.ks-item-2 {
+      background: url(https://assets.codepen.io/1914743/1.jpg) center no-repeat;
+      background-size: cover;
+    }
+
+    &.ks-item-3 {
+      background: url(https://assets.codepen.io/1914743/1.jpg) center no-repeat;
+      background-size: cover;
+    }
+    .heading {
+      position: relative;
+      font-size: clamp(2.6rem, 2.1vw, 3.5rem);
+      font-weight: bold;
+      color: #fff;
+      transform: translateY(250%);
+      transition: ease 0.2s transform;
+      z-index: 1;
+    }
+    .ks-item-content {
+      position: relative;
+      transform: scale(0);
+      visibility: hidden;
+      transition: ease 0.4s opacity;
+      transform-origin: bottom;
+      opacity: 0;
+      z-index: 1;
+    }
+    .ks-item-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: clamp(1.4rem, 1vw, 1.6rem);
+      color: #fff;
+      margin: clamp(1.5rem, 1.5vw, 2.5rem) 0 clamp(2.5rem, 2.1vw, 3.5rem);
+      line-height: 1.8;
+    }
+    &:focus-within .ks-item-content,
+    &:hover .ks-item-content {
+      transform: scale(1);
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+    }
+    &:focus-within .heading,
+    &:hover .heading {
+      transform: translateY(0);
+    }
+
+    &:focus-within:after,
+    &:hover:after {
+      opacity: 0.82;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .ks-item {
+    padding: clamp(0.6rem, 0.678vw, 3.6rem);
+  }
+}
+
+@media (min-width: 1376px) {
+  .ks-item {
+    padding: clamp(2rem, 1.98vw, 3.6rem);
+  }
+
+  .ks-item .heading {
+    transform: translateY(12rem);
+  }
+}

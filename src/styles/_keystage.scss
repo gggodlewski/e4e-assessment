@@ -98,17 +98,21 @@
 }
 
 @media (min-width: 1000px) {
-  .ks-item {
-    padding: clamp(0.6rem, 0.678vw, 3.6rem);
+  .key-stage-block {
+    padding-bottom: 0;
+    .ks-item {
+      padding: clamp(0.6rem, 0.678vw, 3.6rem);
+    }
   }
 }
 
 @media (min-width: 1376px) {
-  .ks-item {
-    padding: clamp(2rem, 1.98vw, 3.6rem);
-  }
-
-  .ks-item .heading {
-    transform: translateY(12rem);
+  .key-stage-block {
+    .ks-item {
+      padding: clamp(2rem, 1.98vw, 3.6rem);
+      .heading {
+        transform: translateY(12rem);
+      }
+    }
   }
 }

@@ -20,6 +20,7 @@ export const burgerNav = () => {
 
   const handleDropdown = () => {
     document.querySelector("[data-nav-sub-list]").classList.toggle("nav-sub-list-open");
+    document.querySelector("[data-dropdown-trigger]").classList.toggle("nav-dropdown-open");
   };
 
   const applyListeners = () => {

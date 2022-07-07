@@ -98,6 +98,7 @@
     }
 
     &.nav-open {
+      overflow: hidden;
       .burger-nav {
         --translateX: 32.5rem;
 
@@ -121,8 +122,6 @@
       overflow-y: auto;
       padding-top: 10rem;
 
-      .nav-list {
-      }
       .nav-item {
         position: relative;
         display: flex;
@@ -151,15 +150,16 @@
           .nav-icon-close {
             display: none;
           }
-        }
-        &.nav-dropdown-open {
-          .nav-icon-open {
-            display: none;
+          &.nav-dropdown-open {
+            .nav-icon-open {
+              display: none;
+            }
+            .nav-icon-close {
+              display: block;
+            }
           }
-          .nav-icon-close {
-            display: block;
-          }
         }
+
         .nav-sub-list {
           background: rgba(0, 0, 0, 0.12);
           display: none;

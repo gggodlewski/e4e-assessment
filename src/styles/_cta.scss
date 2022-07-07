@@ -1,0 +1,28 @@
+.cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 2.4rem 3rem;
+  transition: ease 0.2s color, ease 0.2s background;
+  clip-path: polygon(6% 0, 95% 0, 100% 50%, 95% 100%, 6% 100%, 0 50%);
+  &:hover {
+    background: #fff;
+    color: var(--primary-color);
+  }
+}
+
+.cta-2 {
+  background: #fff;
+  color: var(--primary-color);
+  &:hover {
+    color: #fff;
+    background: var(--primary-color);
+  }
+}

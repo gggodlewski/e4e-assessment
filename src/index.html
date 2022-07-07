@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-
   </head>
   <body>
     <div class="main-container">
-
       <header class="main-header">
-
         <div class="school-info">
           <a href="" class="homepage-link">
-            <img src="https://assets.codepen.io/1914743/logo_2.png" alt="School Logo" class="school-logo">
+            <img src="https://assets.codepen.io/1914743/logo_2.png" alt="School Logo" class="school-logo" />
           </a>
           <h1 class="heading"><span>The</span>Westgate School</h1>
         </div>
@@ -67,49 +64,205 @@
       </header>
 
       <div class="hero">
-
         <div class="main-slideshow">
-
           <div class="swiper" data-slideshow-swiper>
-
             <div class="swiper-wrapper">
-
-              <div class="swiper-slide swiper-no-swiping"><img src="https://assets.codepen.io/1914743/1.jpg" alt="Slideshow Image 1"></div>
-              <div class="swiper-slide swiper-no-swiping"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Slideshow Image 2"></div>
-
+              <div class="swiper-slide swiper-no-swiping">
+                <img src="https://assets.codepen.io/1914743/1.jpg" alt="Slideshow Image 1" />
+              </div>
+              <div class="swiper-slide swiper-no-swiping">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                  alt="Slideshow Image 2"
+                />
+              </div>
             </div>
           </div>
 
-        </div>
+          <p class="slideshow-quote">#<span>equipped</span>for<span>life</span></p>
 
+          <svg
+            class="slideshow-overlay-graphic"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1400 265"
+          >
+            <path
+              id="Path_3788"
+              data-name="Path 3788"
+              d="M1400,219.667H0V163.106L1400,0Z"
+              transform="translate(0 45.333)"
+              fill="#589cc9"
+              opacity="0.4"
+            />
+            <path
+              id="Path_3776"
+              data-name="Path 3776"
+              d="M1400,0H0V68.234L1400,265Z"
+              transform="translate(1400 265) rotate(180)"
+              fill="#1967ab"
+              opacity="0.4"
+            />
+          </svg>
+        </div>
       </div>
 
-  </div>
+      <section class="events-block">
+        <div class="events-block-inner">
+          <div class="heading-wrap">
+            <h2 class="heading">Upcoming Events</h2>
+          </div>
+          <div class="swiper" data-events-swiper>
+            <div class="swiper-button-prev swiper-nav-button">
+              <svg class="swiper-icon-nav"><use href="#svg-prev"></use></svg>
+            </div>
+            <div class="swiper-button-next swiper-nav-button">
+              <svg class="swiper-icon-nav"><use href="#svg-next"></use></svg>
+            </div>
 
-  <svg xmlns='http://www.w3.org/2000/svg' style="display: none;">
-    <symbol id='svg-arrow' viewBox='0 0 12.44 14.354'>
-      <path d='M0,0H14.354L7.177,12.44Z' transform='translate(0 14.354) rotate(-90)' />
-    </symbol>
-    <symbol id='svg-burger' viewBox='0 0 384.97 384.97'>
-      <path d='M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z' />
-      <path d='M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03S379.58,180.455,372.939,180.455z' />
-      <path d='M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z' />
-    </symbol>
-    <symbol id='svg-clock' viewBox='0 0 24 24'>
-      <path d='m12 1a11 11 0 1 0 11 11 11.013 11.013 0 0 0 -11-11zm0 20a9 9 0 1 1 9-9 9.011 9.011 0 0 1 -9 9z' />
-      <path d='m13 11.586v-5.586a1 1 0 0 0 -2 0v6a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414z' />
-    </symbol>
-    <symbol id='svg-close' viewBox='0 0 512 512'>
-      <path
-        d='M256,0C115.39,0,0,115.39,0,256s115.39,256,256,256s256-115.39,256-256S396.61,0,256,0z M383.28,340.858l-42.422,42.422
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="event-item">
+                  <p class="event-date">12 Jan</p>
+                  <p class="event-title">Example Event Title Goes Here</p>
+                  <div class="event-duration">
+                    <svg class="event-duration-icon">
+                      <use href="#svg-clock"></use>
+                    </svg>
+                    All Day
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="event-item">
+                  <p class="event-date">14 Jan</p>
+                  <p class="event-title">Example Event Title Goes Here</p>
+                  <div class="event-duration">
+                    <svg class="event-duration-icon">
+                      <use href="#svg-clock"></use>
+                    </svg>
+                    All Day
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="event-item">
+                  <p class="event-date">18 Jan</p>
+                  <p class="event-title">Example Event Title Goes Here</p>
+                  <div class="event-duration">
+                    <svg class="event-duration-icon">
+                      <use href="#svg-clock"></use>
+                    </svg>
+                    All Day
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="event-item">
+                  <p class="event-date">23 Jan</p>
+                  <p class="event-title">Example Event Title Goes Here</p>
+                  <div class="event-duration">
+                    <svg class="event-duration-icon">
+                      <use href="#svg-clock"></use>
+                    </svg>
+                    All Day
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="cta">Full Calendar</a>
+        </div>
+      </section>
+
+      <section class="news-block">
+        <div class="news-block-inner">
+          <div class="heading-wrap">
+            <h2 class="heading">Latest News</h2>
+            <a href="#" class="cta cta-2">View All News</a>
+          </div>
+          <div class="swiper" data-news-swiper>
+            <div class="swiper-button-prev swiper-nav-button">
+              <svg class="swiper-icon-nav"><use href="#svg-prev"></use></svg>
+            </div>
+            <div class="swiper-button-next swiper-nav-button">
+              <svg class="swiper-icon-nav"><use href="#svg-next"></use></svg>
+            </div>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="news-item">
+                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <div class="news-content">
+                    <p class="news-date">14 Jan</p>
+                    <p class="news-title">Example news story title</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="news-item">
+                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <div class="news-content">
+                    <p class="news-date">14 Jan</p>
+                    <p class="news-title">Example news story title</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="news-item">
+                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <div class="news-content">
+                    <p class="news-date">14 Jan</p>
+                    <p class="news-title">Example news story title</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="news-item">
+                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <div class="news-content">
+                    <p class="news-date">14 Jan</p>
+                    <p class="news-title">Example news story title</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="svg-arrow" viewBox="0 0 12.44 14.354">
+        <path d="M0,0H14.354L7.177,12.44Z" transform="translate(0 14.354) rotate(-90)" />
+      </symbol>
+      <symbol id="svg-burger" viewBox="0 0 384.97 384.97">
+        <path
+          d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"
+        />
+        <path
+          d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03S379.58,180.455,372.939,180.455z"
+        />
+        <path
+          d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"
+        />
+      </symbol>
+      <symbol id="svg-clock" viewBox="0 0 24 24">
+        <path d="m12 1a11 11 0 1 0 11 11 11.013 11.013 0 0 0 -11-11zm0 20a9 9 0 1 1 9-9 9.011 9.011 0 0 1 -9 9z" />
+        <path d="m13 11.586v-5.586a1 1 0 0 0 -2 0v6a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414z" />
+      </symbol>
+      <symbol id="svg-close" viewBox="0 0 512 512">
+        <path
+          d="M256,0C115.39,0,0,115.39,0,256s115.39,256,256,256s256-115.39,256-256S396.61,0,256,0z M383.28,340.858l-42.422,42.422
     L256,298.422l-84.858,84.858l-42.422-42.422L213.578,256l-84.858-84.858l42.422-42.422L256,213.578l84.858-84.858l42.422,42.422
-    L298.422,256L383.28,340.858z'
-      />
-    </symbol>
-    <symbol id='svg-search' viewBox='0 0 118.783 118.783'>
-      <path d='M115.97,101.597L88.661,74.286c4.64-7.387,7.333-16.118,7.333-25.488c0-26.509-21.49-47.996-47.998-47.996S0,22.289,0,48.798c0,26.51,21.487,47.995,47.996,47.995c10.197,0,19.642-3.188,27.414-8.605l26.984,26.986c1.875,1.873,4.333,2.806,6.788,2.806c2.458,0,4.913-0.933,6.791-2.806C119.72,111.423,119.72,105.347,115.97,101.597zM47.996,81.243c-17.917,0-32.443-14.525-32.443-32.443s14.526-32.444,32.443-32.444c17.918,0,32.443,14.526,32.443,32.444S65.914,81.243,47.996,81.243z' />
-    </symbol>
-  </svg>
-
+    L298.422,256L383.28,340.858z"
+        />
+      </symbol>
+      <symbol id="svg-search" viewBox="0 0 118.783 118.783">
+        <path
+          d="M115.97,101.597L88.661,74.286c4.64-7.387,7.333-16.118,7.333-25.488c0-26.509-21.49-47.996-47.998-47.996S0,22.289,0,48.798c0,26.51,21.487,47.995,47.996,47.995c10.197,0,19.642-3.188,27.414-8.605l26.984,26.986c1.875,1.873,4.333,2.806,6.788,2.806c2.458,0,4.913-0.933,6.791-2.806C119.72,111.423,119.72,105.347,115.97,101.597zM47.996,81.243c-17.917,0-32.443-14.525-32.443-32.443s14.526-32.444,32.443-32.444c17.918,0,32.443,14.526,32.443,32.444S65.914,81.243,47.996,81.243z"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

@@ -1,7 +1,10 @@
 @import "config";
+@import "cta";
 @import "header";
 @import "navigation";
 @import "slideshow";
+@import "events";
+@import "news";
 
 .main-container {
   transition: cubic-bezier(0.87, 0, 0.13, 1) 0.3s transform;

@@ -11,14 +11,14 @@ export const testimonialsSwiper = () => {
       crossFade: true,
     },
     pagination: {
-      el: ".testimonials-block .swiper-pagination",
+      el: "[data-testimonials-pagination]",
       clickable: true,
     },
   });
 };
 
 export const photoParallax = () => {
-  const observables = document.querySelectorAll(".parallax-block");
+  const observables = document.querySelectorAll("[data-parallax-block]");
   const parallaxRatio = 4;
 
   const applyParallax = (element) => {
@@ -42,7 +42,6 @@ export const photoParallax = () => {
   );
 
   observables.forEach((observable) => {
-    // Run the observer function
     observer.observe(observable);
   });
 };

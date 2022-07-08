@@ -9,8 +9,8 @@ export const newsSwiper = () => {
     watchSlidesProgress: true,
     slideVisibleClass: "swiper-slide-visible",
     navigation: {
-      nextEl: "[data-news-swiper] .swiper-button-next",
-      prevEl: "[data-news-swiper] .swiper-button-prev",
+      nextEl: "[data-events-next]",
+      prevEl: "[data-events-prev]",
     },
     breakpoints: {
       1200: {

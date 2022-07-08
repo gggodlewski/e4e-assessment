@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="icon" href=<%=require("./assets/favicon.ico")%> />
     <title>The Westgate School</title>
   </head>
   <body>
@@ -147,7 +147,7 @@
 
       <section class="testimonials-block">
         <div class="parallax-photo-block">
-          <div class="parallax-photo parallax-block">&nbsp;</div>
+          <div class="parallax-photo" data-parallax-block>&nbsp;</div>
         </div>
 
         <div class="testimonials-swiper swiper" data-testimonials-swiper>
@@ -181,7 +181,7 @@
           </div>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" data-testimonials-pagination></div>
       </section>
 
       <section class="key-stage-block">
@@ -223,10 +223,10 @@
             <h2 class="heading">Upcoming Events</h2>
           </div>
           <div class="swiper" data-events-swiper>
-            <div class="swiper-button-prev swiper-nav-button">
+            <div class="swiper-button-prev swiper-nav-button" data-events-prev>
               <svg class="swiper-icon-nav"><use href="#svg-prev"></use></svg>
             </div>
-            <div class="swiper-button-next swiper-nav-button">
+            <div class="swiper-button-next swiper-nav-button" data-events-next>
               <svg class="swiper-icon-nav"><use href="#svg-next"></use></svg>
             </div>
 
@@ -292,17 +292,17 @@
             <a href="#" class="cta cta-2">View All News</a>
           </div>
           <div class="swiper" data-news-swiper>
-            <div class="swiper-button-prev swiper-nav-button">
+            <div class="swiper-button-prev swiper-nav-button" data-events-prev>
               <svg class="swiper-icon-nav"><use href="#svg-prev"></use></svg>
             </div>
-            <div class="swiper-button-next swiper-nav-button">
+            <div class="swiper-button-next swiper-nav-button" data-events-next>
               <svg class="swiper-icon-nav"><use href="#svg-next"></use></svg>
             </div>
 
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="news-item">
-                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <img class="news-image" src=<%=require("./assets/news-item-1.jpg")%> alt="News Image" />
                   <div class="news-content">
                     <p class="news-date">14 Jan</p>
                     <p class="news-title">Example news story title</p>
@@ -311,7 +311,7 @@
               </div>
               <div class="swiper-slide">
                 <a href="#" class="news-item">
-                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <img class="news-image" src=<%=require("./assets/news-item-2.jpg")%> alt="News Image" />
                   <div class="news-content">
                     <p class="news-date">14 Jan</p>
                     <p class="news-title">Example news story title</p>
@@ -320,7 +320,7 @@
               </div>
               <div class="swiper-slide">
                 <a href="#" class="news-item">
-                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <img class="news-image" src=<%=require("./assets/news-item-3.jpg")%> alt="News Image" />
                   <div class="news-content">
                     <p class="news-date">14 Jan</p>
                     <p class="news-title">Example news story title</p>
@@ -329,7 +329,7 @@
               </div>
               <div class="swiper-slide">
                 <a href="#" class="news-item">
-                  <img class="news-image" src="https://assets.codepen.io/1914743/1.jpg" alt="News Image" />
+                  <img class="news-image" src=<%=require("./assets/news-item-4.jpg")%> alt="News Image" />
                   <div class="news-content">
                     <p class="news-date">14 Jan</p>
                     <p class="news-title">Example news story title</p>

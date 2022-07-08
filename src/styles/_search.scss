@@ -14,12 +14,12 @@
     display: grid;
     place-items: center;
     margin-left: auto;
-    margin-right: clamp(2rem, 4.3vw, 6rem);
+    margin-right: 2rem;
     clip-path: polygon(50% 100%, 100% 86%, 100% 0, 0 0, 0 86%);
     background: var(--secondary-color);
     color: #fff;
-    width: 4.8rem;
-    height: 6.3rem;
+    width: 3.8rem;
+    height: 3rem;
     transition: ease 0.2s;
     .svg-icon {
       display: block;
@@ -49,6 +49,16 @@
       &::placeholder {
         color: #fff;
       }
+    }
+  }
+}
+
+@media (min-width: 1320px) {
+  .search-block {
+    .search-trigger {
+      margin-right: 6rem;
+      width: 4.8rem;
+      height: 6.3rem;
     }
   }
 }

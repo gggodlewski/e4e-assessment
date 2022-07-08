@@ -1,0 +1,25 @@
+.scroll-down {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 2rem;
+  color: #fff;
+  transition: ease 0.2s color;
+  z-index: 5;
+  .svg-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+@media (min-width: 1320px) {
+  .scroll-down {
+    bottom: 1rem;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 2rem;
   gap: 3rem;
   z-index: 100;
 
@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 981px) {
+@media (min-width: 1300px) {
   .main-header {
     padding: 6rem 6rem 0;
   }
